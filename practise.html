@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Plant Growth</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .plant-container {
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .plant {
+            width: 100px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .message {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌱 Grow Your Own Plant! 🌱</h1>
+    <p class="message">Click the buttons to make your plant grow!</p>
+
+    <div class="plant-container">
+        <img id="plant" class="plant" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sprouting_bean.JPG/120px-Sprouting_bean.JPG" alt="Plant">
+    </div>
+
+    <button class="button" onclick="growPlant()">💧 Water</button>
+    <button class="button" onclick="giveSunlight()">☀️ Sunlight</button>
+
+    <script>
+        let growthStage = 0;
+        const plant = document.getElementById("plant");
+
+        function growPlant() {
+            if (growthStage < 3) {
+                growthStage++;
+                updatePlant();
+            }
+        }
+
+        function giveSunlight() {
+            if (growthStage < 3) {
+                growthStage++;
+                updatePlant();
+            }
+        }
+
+        function updatePlant() {
+            const images = [
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sprouting_bean.JPG/120px-Sprouting_bean.JPG",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Young_tomato_plant.jpg/120px-Young_tomato_plant.jpg",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mature_tree.jpg/120px-Mature_tree.jpg"
+            ];
+            plant.src = images[growthStage];
+            document.querySelector(".message").textContent = growthStage === 3 ? "Your plant is fully grown! 🎉" : "Keep nurturing your plant!";
+        }
+    </script>
+</body>
+</html>

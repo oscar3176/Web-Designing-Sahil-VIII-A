@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Eco Friendly Environment</title>
+        <link rel = "shortcut icon" href = "plant.jpg">
+        <script src="main.js"></script>
+        <link rel = "stylesheet", href = "all_style.css">
+    </head>
+<body id="body1", onload="load_quiz()">
+    <button id="back", onclick="back()"><img id="back1", src="goback.png"></button>
+    <h1 style="font-size: 120px; margin-right: 65px; font-family: algerian; font-weight: 500; font-style: italic; color: white;"><u>Environment Quiz</u></h1>
+    <br>
+    <br>
+<div id="yay", style="display: none;">
+    <img style="font-size: 70px; font-weight: lighter; border-radius: 40px;", src="congrats.gif", id="yayy">
+    <h1 id="answerTHIS", style="margin-top: 30px; font-family: agency fb; font-size: 50px; color: white;"></h1>
+    <button onclick="restart()", style="cursor: pointer; border-radius: 150px; background-color: black;"><img src="restart.png", style="border-radius: 100%; width: 300px; height: 300px;", id="restart"></button>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<div id="something">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 1: What is the primary cause of global warming?</u></h1>
+    <input type="radio", name="question1", id="correct1", class="opt"><input value="Industrial emissions", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Deforestration", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Excessive rainfall", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Overpopulation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="global warming.jpg", style="border-radius: 20px; margin-left: 775px; width: 350px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 2: Which of the following is a renewable source of energy?</u></h1>
+    <input type="radio", name="question2", class="opt"><input value="Coal", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", class="opt"><input value="Fuel Gas", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", id="correct2", class="opt"><input value="Solar Energy", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", class="opt"><input value="Petroleum", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="renewable.jpg", style="border-radius: 20px; margin-right: 900px; width: 375px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 3: Which process is responsible for converting atmospheric nitrogen into a form usable by plants?</u></h1>
+    <input type="radio", name="question3", class="opt"><input value="Photosynthesis", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br><br>
+    <input type="radio", name="question3", class="opt"><input value="Condensation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br><br>
+    <input type="radio", name="question3", class="opt"><input value="Respiration", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br><br>
+    <input type="radio", name="question3", id="correct3", class="opt"><input value="Nitrogen Fixation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br><br>
+    <img src="nitrogen_fixation.jpg", style="border-radius: 20px; margin-left: 640px; width: 375px; height: 300px; margin-top: -280px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 4: Which of the following is a major contributor to acid rain formation?</u></h1>
+    <input type="radio", name="question4", class="opt"><input value="Carbon Dioxide", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt", id="correct4"><input value="Sulfur Dioxide", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt"><input value="Oxygen", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt"><input value="Methane Emmisions", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="acid_rain.jpg", style="border-radius: 20px; margin-right: 850px; width: 175px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 5: Why do deforested areas experience more extreme temperature changes?</u></h1>
+    <input type="radio", name="question5", class="opt"><input value="Increased oxygen levels", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", class="opt"><input value="Less water absorption", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", class="opt"><input value="Increased carbon levels", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", id="correct5", class="opt"><input value="Loss of tree shade", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="deforestation.png", style="border-radius: 20px; margin-left: 1100px; width: 400px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 6: What is the term for the excessive use of natural resources leading to depletion?</u></h1>
+    <input type="radio", name="question6", class="opt"><input value="Conservation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", class="opt"><input value="Biodiversity", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", id="correct6", class="opt"><input value="Overexploitation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", class="opt"><input value="Ecological Balance", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="depletion.jpg", style="border-radius: 20px; margin-right: 1000px; width: 225px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 7: Which method of conversation is being depicted in the given picture?</u></h1>
+    <input type="radio", name="question7", class="opt"><input value="Contour Plowing", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", id="correct7", class="opt"><input value="Terrace Farming", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", class="opt"><input value="Crop Rotation", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", class="opt"><input value="Buffer Strips", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="terrace.jpg", style="border-radius: 20px; margin-left: 750px; width: 300px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <br>
+    <br>
+    <br>
+    <input type="submit", name="Submit", value="Submit", onclick="result()", id="submit">
+</div>
+</body>
+</html>
+
+<!-- Cascadia Code -->
